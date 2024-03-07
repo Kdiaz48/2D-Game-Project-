@@ -9,7 +9,7 @@
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Node2D" parent="." instance=ExtResource("2_7x6ma")]
+[node name="Kaitlyn Scene" parent="." instance=ExtResource("2_7x6ma")]
 position = Vector2(-1, -1)
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
@@ -26,4 +26,4 @@ texture = ExtResource("1_0mbor")
 position = Vector2(38, -103)
 
 [node name="Yan-scene" parent="." instance=ExtResource("4_u3w6s")]
-position = Vector2(-413, -229)
+position = Vector2(-443, -229)
