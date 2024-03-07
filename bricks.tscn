@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://l06dxj2wrwea"]
+
+[ext_resource type="Texture2D" uid="uid://c8dsjj6yxlbjj" path="res://brick.webp" id="1_7dkxl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o7kcd"]
+size = Vector2(1172, 125)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(587, 581.5)
+shape = SubResource("RectangleShape2D_o7kcd")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="brick" type="Sprite2D" parent="Node2D"]
+position = Vector2(117, 580)
+scale = Vector2(1.215, 1.195)
+texture = ExtResource("1_7dkxl")
+
+[node name="brick4" type="Sprite2D" parent="Node2D"]
+position = Vector2(820, 579)
+scale = Vector2(1.215, 1.195)
+texture = ExtResource("1_7dkxl")
+
+[node name="brick5" type="Sprite2D" parent="Node2D"]
+position = Vector2(1057, 579)
+scale = Vector2(1.215, 1.195)
+texture = ExtResource("1_7dkxl")
+
+[node name="brick3" type="Sprite2D" parent="Node2D"]
+position = Vector2(587, 579)
+scale = Vector2(1.215, 1.195)
+texture = ExtResource("1_7dkxl")
+
+[node name="brick2" type="Sprite2D" parent="Node2D"]
+position = Vector2(353, 579)
+scale = Vector2(1.215, 1.195)
+texture = ExtResource("1_7dkxl")
