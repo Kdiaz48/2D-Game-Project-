@@ -1,13 +1,11 @@
 [gd_scene load_steps=2 format=3 uid="uid://bio8arrtumhdr"]
 
-[ext_resource type="Texture2D" uid="uid://f6l0hdc1fu8j" path="res://icon.svg" id="1_a8jkk"]
+[ext_resource type="PackedScene" uid="uid://3efplghkpust" path="res://Background Scene.tscn" id="1_m01fq"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(446, 199)
-texture = ExtResource("1_a8jkk")
+[node name="Node2D" parent="." instance=ExtResource("1_m01fq")]
+position = Vector2(-545, 0)
 
-[node name="Icon2" type="Sprite2D" parent="."]
-position = Vector2(864, 315)
-texture = ExtResource("1_a8jkk")
+[node name="Node2D2" parent="." instance=ExtResource("1_m01fq")]
+position = Vector2(595, -1)

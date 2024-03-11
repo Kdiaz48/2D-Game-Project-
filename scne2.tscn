@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvab2k4p71kbt"]
+
+[ext_resource type="PackedScene" uid="uid://3efplghkpust" path="res://Background Scene.tscn" id="1_re8yq"]
+
+[node name="Node2D" instance=ExtResource("1_re8yq")]
+
+[node name="BackgroundLayer2" parent="." index="1"]
+position = Vector2(579, 323)
+
+[node name="BackgroundLayer3" parent="." index="2"]
+position = Vector2(579, 326)
+
+[node name="Node2D" parent="." index="3" instance=ExtResource("1_re8yq")]
+position = Vector2(1163, -1)

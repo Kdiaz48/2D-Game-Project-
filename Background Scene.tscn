@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://c0touxgv5pp2f"]
+
+[ext_resource type="Texture2D" uid="uid://dco0nnefgukeq" path="res://oak_woods_v1.0/background/background_layer_1.png" id="1_ixjeu"]
+[ext_resource type="Texture2D" uid="uid://cefbxrrmnirb0" path="res://oak_woods_v1.0/background/background_layer_2.png" id="2_c1fet"]
+[ext_resource type="Texture2D" uid="uid://dwkjvstlckb74" path="res://oak_woods_v1.0/background/background_layer_3.png" id="3_upanr"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="BackgroundLayer1" type="Sprite2D" parent="."]
+position = Vector2(577, 323.5)
+scale = Vector2(3.55625, 3.53889)
+texture = ExtResource("1_ixjeu")
+
+[node name="BackgroundLayer2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(577, 338)
+scale = Vector2(3.55218, 3.55111)
+texture = ExtResource("2_c1fet")
+
+[node name="BackgroundLayer3" type="Sprite2D" parent="."]
+position = Vector2(576, 328)
+scale = Vector2(3.55625, 3.48889)
+texture = ExtResource("3_upanr")

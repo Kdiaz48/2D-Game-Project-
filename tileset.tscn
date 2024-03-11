@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bw65xfg1ej4ox"]
+
+[ext_resource type="Texture2D" uid="uid://y3rbc6ov72rk" path="res://oak_woods_v1.0/character/oak_woods_tileset.png" id="1_6xs1u"]
+
+[node name="OakWoodsTileset" type="Sprite2D"]
+position = Vector2(456, 387)
+texture = ExtResource("1_6xs1u")
