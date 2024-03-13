@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://cg4jb36kjahc3"]
+
+[ext_resource type="Texture2D" uid="uid://80nu01nak2eb" path="res://char_a_p1_0bas_humn_v01.png" id="1_x755h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cl25c"]
+size = Vector2(45.2, 51.2)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k1wa4"]
+atlas = ExtResource("1_x755h")
+region = Rect2(0, 448, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xndwc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k1wa4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_plavc"]
+size = Vector2(45.8, 51)
+
+[node name="Bullet" type="RigidBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-12, 6.00001)
+scale = Vector2(5, 5)
+shape = SubResource("RectangleShape2D_cl25c")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_xndwc")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-11.5, 5.5)
+scale = Vector2(5, 5)
+shape = SubResource("RectangleShape2D_plavc")
