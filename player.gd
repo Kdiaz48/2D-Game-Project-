@@ -1,31 +1,29 @@
 extends CharacterBody2D
 
-var movespeed = 10
-var bullet_speed = 1000
 var bullet = preload("res://Bullet.tscn")
 
-func _ready():
-	pass
+var gravity := 10
+var b
+const JUMP_POWER = -500
 
 func _physics_process(delta):
+	move()
+	shoot()
 	
-	if Input.is_action_just_pressed("up"):
-		position.y -= 1
+func move():
 	if Input.is_action_pressed("right"):
-		position.x += 1
+		position.x += 5
 	if Input.is_action_pressed("left"):
-		position.x -= 1
+		position.x -= 5
+		
+	velocity.y += gravity
+	if Input.is_action_just_pressed("ui_accept") && is_on_floor():
+		velocity.y = JUMP_POWER
+	move_and_slide()
 	
-	
-	if Input.is_action_just_pressed("LMB"):
-		fire()
-	
-func fire():
-	var bullet_instance = bullet.instance()
-	bullet_instance.position = get_global_position()
-	bullet_instance.rotation_degress = rotation_degrees
-	bullet_instance.apply_impulse(Vector2(),Vector2(bullet_speed,0).rotated(rotation))
-	get_tree().get_root().call_deferred("add_child",bullet_instance)
-	
-	
-
+func shoot():
+	if Input.is_action_just_pressed("shoot"):
+		b = bullet.instantiate()
+		get_parent().add_child(b)
+		b.global_position = $Marker2D.global_position
+		

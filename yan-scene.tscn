@@ -1,3 +1,75 @@
-[gd_scene format=3 uid="uid://bqv3cdhcfcfdk"]
+[gd_scene load_steps=11 format=3 uid="uid://bqv3cdhcfcfdk"]
+
+[ext_resource type="Texture2D" uid="uid://dr55mca7joguy" path="res://Gunner_Blue_Run.png" id="1_3rl3y"]
+[ext_resource type="Script" path="res://player.gd" id="1_jx1jg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ls0xp"]
+size = Vector2(22, 35)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tw6or"]
+atlas = ExtResource("1_3rl3y")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qrffo"]
+atlas = ExtResource("1_3rl3y")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jjkl6"]
+atlas = ExtResource("1_3rl3y")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2oj1f"]
+atlas = ExtResource("1_3rl3y")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ovivj"]
+atlas = ExtResource("1_3rl3y")
+region = Rect2(192, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fydtk"]
+atlas = ExtResource("1_3rl3y")
+region = Rect2(240, 0, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hg426"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tw6or")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qrffo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jjkl6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2oj1f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ovivj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fydtk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Yan-scene" type="Node2D"]
+
+[node name="player" type="CharacterBody2D" parent="."]
+position = Vector2(-1, -2.5)
+script = ExtResource("1_jx1jg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
+scale = Vector2(4, 4)
+shape = SubResource("RectangleShape2D_ls0xp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player"]
+position = Vector2(1, 2.5)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_hg426")
+
+[node name="Marker2D" type="Marker2D" parent="player"]
+position = Vector2(65, -11.5)
