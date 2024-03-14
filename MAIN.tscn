@@ -4,7 +4,11 @@
 [ext_resource type="PackedScene" uid="uid://l06dxj2wrwea" path="res://bricks.tscn" id="2_7x6ma"]
 [ext_resource type="PackedScene" uid="uid://c201nxqnmnffx" path="res://david_scene.tscn" id="3_ing72"]
 [ext_resource type="PackedScene" uid="uid://bqv3cdhcfcfdk" path="res://yan-scene.tscn" id="4_of4qd"]
+<<<<<<< HEAD
+[ext_resource type="PackedScene" uid="uid://btgoa8n260xqp" path="res://Enemy.tscn" id="5_ibbuu"]
+=======
 [ext_resource type="PackedScene" uid="uid://pgjppg1gk1wt" path="res://DESIGN SCENE.tscn" id="5_wjyhw"]
+>>>>>>> 21761dbc772f9cfb00bf6997a81abc1fe684a954
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3o52m"]
 
@@ -27,8 +31,22 @@ texture = ExtResource("1_0mbor")
 [node name="David Scene" parent="." instance=ExtResource("3_ing72")]
 position = Vector2(38, -103)
 
+<<<<<<< HEAD
+[node name="Yan-scene" parent="." groups=["Player"] instance=ExtResource("4_of4qd")]
+position = Vector2(183, 256)
+
+[node name="Node2D" parent="." groups=["Yan-scene"] instance=ExtResource("5_ibbuu")]
+position = Vector2(871, 462)
+
+[node name="Node2D2" parent="." instance=ExtResource("5_ibbuu")]
+position = Vector2(1158, 452)
+
+[node name="Node2D3" parent="." instance=ExtResource("5_ibbuu")]
+position = Vector2(1883, 433)
+=======
 [node name="Yan-scene" parent="." instance=ExtResource("4_of4qd")]
 position = Vector2(535, 249)
 
 [node name="Node2D" parent="." instance=ExtResource("5_wjyhw")]
 position = Vector2(1286, -110)
+>>>>>>> 21761dbc772f9cfb00bf6997a81abc1fe684a954
