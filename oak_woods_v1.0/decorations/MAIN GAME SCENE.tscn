@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://0fylweae3lo"]
+
+[ext_resource type="PackedScene" uid="uid://cfjt2whngxbfm" path="res://BG BG .tscn" id="1_d3rw3"]
+
+[node name="Node2D3" instance=ExtResource("1_d3rw3")]
+position = Vector2(-1334, -1107)
+scale = Vector2(3.5, 3.5)
+
+[node name="Node2D3" parent="." index="4" instance=ExtResource("1_d3rw3")]
+position = Vector2(639, 0)
+
+[node name="Node2D4" parent="." index="5" instance=ExtResource("1_d3rw3")]
+position = Vector2(1279, 0)
