@@ -1,46 +1,22 @@
 
 extends Sprite2D
 
-@onready var animator = $"AnimationPlayer"
+@export var health = 10
+@export var booleanVar = true
 
-const GRAVITY = 10 
-const JUMP_POWER = -300
+@export var speed = 5
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
 
-var velocity = Vector2.ZERO
 
-func _physics_process(delta):
-	velocity.y += GRAVITY
-	if Input.is_action_just_pressed("ui_accept"):
-		velocity.y = JUMP_POWER
-
-	
-func move():
-	if Input.is_action_pressed("right"):
-		position.x += 5
-	if Input.is_action_pressed("left"):
-		position.x -= 5
-		
-
-		
-#func move():
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
 	if Input.is_action_pressed("ui_right"):
-		position.x += 5 
-	if Input.is_action_pressed("left"):
-		position.x -= 5
-	if Input.is_action_just_pressed("ui_up"):
-		position.y -= 5
-	if Input.is_action_just_pressed("ui_down"):
-		position.y += 5
-		
-	
-
-#func _process(_delta):
-	if Input.is_action_pressed("ui_right"):
-		$AnimationPlayer.play("walk_right")
-	else:
-		$AnimationPlayer.play("idle_right")
-#	if Input.is_action_just_pressed("ui_accept"):
-#		$AnimatedPlayer.play("jump")
-\
-
-		
+		position.x += speed
+	if Input.is_action_pressed("ui_left"):
+		position.x -= speed
+	if Input.is_action_pressed("ui_up"):
+		position.y -= speed
+	if Input.is_action_pressed("ui_down"):
+		position.y += speed

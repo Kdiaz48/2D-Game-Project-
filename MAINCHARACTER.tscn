@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dfl4ljpaeg41g"]
+[gd_scene load_steps=9 format=3 uid="uid://dfl4ljpaeg41g"]
 
 [ext_resource type="Texture2D" uid="uid://b8ho8kmf3dptr" path="res://AnimationSheet_Character.png" id="1_de8me"]
 [ext_resource type="Script" path="res://MAINCHARACTER.gd" id="2_8rfu6"]
@@ -91,8 +91,6 @@ _data = {
 "walk_right": SubResource("Animation_b263h")
 }
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mk4oj"]
-
 [node name="Sprite2D" type="Sprite2D"]
 texture_filter = 1
 scale = Vector2(5, 5)
@@ -106,8 +104,3 @@ script = ExtResource("2_8rfu6")
 libraries = {
 "": SubResource("AnimationLibrary_ebwqq")
 }
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.8, 1.8)
-scale = Vector2(1, 1)
-shape = SubResource("CapsuleShape2D_mk4oj")
