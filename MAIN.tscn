@@ -48,5 +48,9 @@ position = Vector2(1883, 433)
 position = Vector2(535, 249)
 
 [node name="Node2D" parent="." instance=ExtResource("5_wjyhw")]
+<<<<<<< HEAD
+position = Vector2(1288, -110)
+=======
 position = Vector2(1286, -110)
 >>>>>>> 21761dbc772f9cfb00bf6997a81abc1fe684a954
+>>>>>>> e11bd9759e7b5a32865332f06f649ac3f1ad4205
