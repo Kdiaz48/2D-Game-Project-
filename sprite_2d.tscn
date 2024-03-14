@@ -1,9 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://cb57bsdw7yd17"]
+[gd_scene load_steps=7 format=3 uid="uid://cb57bsdw7yd17"]
 
 [ext_resource type="Texture2D" uid="uid://b8ho8kmf3dptr" path="res://AnimationSheet_Character.png" id="1_8eaan"]
 
 [sub_resource type="Animation" id="Animation_b263h"]
 resource_name = "walk_right"
+length = 0.8
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -18,8 +19,58 @@ tracks/0/keys = {
 "values": [24, 25, 26, 27, 28, 29, 30, 31]
 }
 
+[sub_resource type="Animation" id="Animation_7ovju"]
+resource_name = "idle_right"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+
+[sub_resource type="Animation" id="Animation_sgioe"]
+resource_name = "death"
+length = 0.7
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [48, 49, 50, 51]
+}
+
+[sub_resource type="Animation" id="Animation_07i55"]
+resource_name = "dodge"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [56, 57, 58, 59, 60, 61, 63, 63, 63, 56]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ebwqq"]
 _data = {
+"death": SubResource("Animation_sgioe"),
+"dodge": SubResource("Animation_07i55"),
+"idle_right": SubResource("Animation_7ovju"),
 "walk_right": SubResource("Animation_b263h")
 }
 
@@ -28,7 +79,7 @@ texture_filter = 1
 texture = ExtResource("1_8eaan")
 hframes = 8
 vframes = 9
-frame = 26
+frame = 56
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
