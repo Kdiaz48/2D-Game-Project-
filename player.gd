@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 var bullet = preload("res://Bullet.tscn")
 
-var gravity := 10
+var gravity := 25
 var b
 const JUMP_POWER = -500
 
