@@ -1,10 +1,22 @@
-[gd_scene load_steps=2 format=3 uid="uid://daq3slyurifqx"]
+[gd_scene load_steps=4 format=3 uid="uid://daq3slyurifqx"]
+
+[ext_resource type="Script" path="res://coin.gd" id="1_4jo5k"]
+[ext_resource type="PackedScene" uid="uid://ba8qh1622nuv2" path="res://coin anime.tscn" id="2_alvlw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1xqaq"]
 
 [node name="coin" type="Area2D"]
+script = ExtResource("1_4jo5k")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D"]
 shape = SubResource("RectangleShape2D_1xqaq")
+
+[node name="Sprite2D2" parent="." instance=ExtResource("2_alvlw")]
+position = Vector2(492, 631)
+
+[node name="Sprite2D3" parent="." instance=ExtResource("2_alvlw")]
+position = Vector2(585, 775)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
