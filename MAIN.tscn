@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://c01i5l3fptd8a"]
+[gd_scene load_steps=7 format=3 uid="uid://c01i5l3fptd8a"]
 
 [ext_resource type="Texture2D" uid="uid://f6l0hdc1fu8j" path="res://icon.svg" id="1_0mbor"]
 [ext_resource type="PackedScene" uid="uid://l06dxj2wrwea" path="res://bricks.tscn" id="2_7x6ma"]
 [ext_resource type="PackedScene" uid="uid://c201nxqnmnffx" path="res://david_scene.tscn" id="3_ing72"]
 [ext_resource type="PackedScene" uid="uid://bqv3cdhcfcfdk" path="res://yan-scene.tscn" id="4_of4qd"]
+[ext_resource type="PackedScene" uid="uid://pgjppg1gk1wt" path="res://DESIGN SCENE.tscn" id="5_wjyhw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3o52m"]
 
@@ -27,3 +28,6 @@ position = Vector2(38, -103)
 
 [node name="Yan-scene" parent="." instance=ExtResource("4_of4qd")]
 position = Vector2(535, 249)
+
+[node name="Node2D" parent="." instance=ExtResource("5_wjyhw")]
+position = Vector2(1286, -110)
