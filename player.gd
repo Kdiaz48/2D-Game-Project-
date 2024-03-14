@@ -4,6 +4,7 @@ var bullet = preload("res://Bullet.tscn")
 
 var gravity := 25
 var b
+var coins = 0
 const JUMP_POWER = -500
 
 func _physics_process(delta):
@@ -27,3 +28,6 @@ func shoot():
 		get_parent().add_child(b)
 		b.global_position = $Marker2D.global_position
 		
+
+func GetCoin(): 
+	coins += 1 
