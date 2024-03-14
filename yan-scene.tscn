@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://bqv3cdhcfcfdk"]
+[gd_scene load_steps=12 format=3 uid="uid://bqv3cdhcfcfdk"]
 
 [ext_resource type="Texture2D" uid="uid://dr55mca7joguy" path="res://Gunner_Blue_Run.png" id="1_3rl3y"]
 [ext_resource type="Script" path="res://player.gd" id="1_jx1jg"]
+[ext_resource type="PackedScene" uid="uid://bcpfgyh7bywg3" path="res://GAME 2d SCENE .tscn" id="3_yh1sa"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ls0xp"]
-size = Vector2(22, 35)
+size = Vector2(21, 22)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tw6or"]
 atlas = ExtResource("1_3rl3y")
@@ -63,13 +64,17 @@ position = Vector2(-1, -2.5)
 script = ExtResource("1_jx1jg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
+position = Vector2(-5, 15.5)
 scale = Vector2(4, 4)
 shape = SubResource("RectangleShape2D_ls0xp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player"]
-position = Vector2(1, 2.5)
-scale = Vector2(4, 4)
+position = Vector2(-15.5, 20.5)
+scale = Vector2(2.6875, 2.25)
 sprite_frames = SubResource("SpriteFrames_hg426")
 
 [node name="Marker2D" type="Marker2D" parent="player"]
 position = Vector2(65, -11.5)
+
+[node name="Node2D" parent="." instance=ExtResource("3_yh1sa")]
+position = Vector2(288, 409)
