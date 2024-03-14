@@ -1,12 +1,12 @@
-extends Sprite2D
+extends CharacterBody2D
 
 var gravity := 25
-var b
 var coins = 0
 const JUMP_POWER = -500
 
 func _physics_process(delta):
 	move()
+
 	
 func move():
 	if Input.is_action_pressed("right"):
@@ -19,6 +19,7 @@ func move():
 		velocity.y = JUMP_POWER
 	move_and_slide()
 	
+
 
 func GetCoin(): 
 	coins += 1 
