@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgj1n5r3ad7d4"]
+
+[ext_resource type="PackedScene" path="res://oak_woods_v1.0/decorations/BGBGBGB.tscn" id="1_lders"]
+
+[node name="Node2D3" instance=ExtResource("1_lders")]
+position = Vector2(-8072, -3731)
+
+[node name="Node2D" parent="." index="3"]
+position = Vector2(-1122.29, -160.286)
+
+[node name="Node2D3" parent="." index="4"]
+position = Vector2(-745.714, 692.286)
+
+[node name="Node2D4" parent="." index="5"]
+position = Vector2(11858.3, 5139.71)
+
+[node name="Node2D2" parent="." index="6" instance=ExtResource("1_lders")]
+position = Vector2(987.429, -32.5715)
+
+[node name="Node2D5" parent="." index="7" instance=ExtResource("1_lders")]
+position = Vector2(7702.57, -31.7144)
