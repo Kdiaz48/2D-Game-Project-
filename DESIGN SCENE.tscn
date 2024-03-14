@@ -1,6 +1,6 @@
 [gd_scene load_steps=30 format=3 uid="uid://pgjppg1gk1wt"]
 
-[ext_resource type="PackedScene" uid="uid://bcpfgyh7bywg3" path="res://GAME 2d SCENE .tscn" id="1_pjrph"]
+[ext_resource type="PackedScene" path="res://GAME 2d SCENE .tscn" id="1_pjrph"]
 [ext_resource type="Texture2D" uid="uid://ce0sargd6ac0t" path="res://oak_woods_v1.0/oak_woods_tileset.png" id="2_lddva"]
 [ext_resource type="Script" path="res://player.gd" id="3_vu2cq"]
 [ext_resource type="Texture2D" uid="uid://dr55mca7joguy" path="res://Gunner_Blue_Run.png" id="4_kdf1e"]
