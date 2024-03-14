@@ -464,7 +464,7 @@ size = Vector2(23, 132)
 size = Vector2(32, 21)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_psndy"]
-size = Vector2(11, 11.25)
+size = Vector2(9, 8)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tw6or"]
 atlas = ExtResource("4_kdf1e")
@@ -1165,17 +1165,17 @@ position = Vector2(341, 583)
 script = ExtResource("3_vu2cq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
-position = Vector2(-46, 62.5)
+position = Vector2(-42, 69)
 scale = Vector2(4, 4)
 shape = SubResource("RectangleShape2D_psndy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player"]
-position = Vector2(-49, 66)
-scale = Vector2(1.52083, 1.19792)
+position = Vector2(-43.25, 71.875)
+scale = Vector2(1.28125, 0.953127)
 sprite_frames = SubResource("SpriteFrames_e2ffc")
 
 [node name="Marker2D" type="Marker2D" parent="player"]
-position = Vector2(-28, 60.5)
+position = Vector2(-23, 69)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 position = Vector2(104, -73)
