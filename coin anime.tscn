@@ -27,6 +27,7 @@ _data = {
 
 [node name="Sprite2D" type="Sprite2D"]
 texture_filter = 1
+position = Vector2(40, 26)
 texture = ExtResource("1_n84tp")
 hframes = 3
 vframes = 3
