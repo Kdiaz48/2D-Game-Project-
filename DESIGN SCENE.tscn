@@ -4,11 +4,6 @@
 [ext_resource type="Texture2D" uid="uid://ce0sargd6ac0t" path="res://oak_woods_v1.0/oak_woods_tileset.png" id="2_lddva"]
 [ext_resource type="Script" path="res://player.gd" id="3_vu2cq"]
 [ext_resource type="Texture2D" uid="uid://dr55mca7joguy" path="res://Gunner_Blue_Run.png" id="4_kdf1e"]
-<<<<<<< HEAD
-[ext_resource type="PackedScene" uid="uid://btgoa8n260xqp" path="res://Enemy.tscn" id="5_32861"]
-=======
-[ext_resource type="PackedScene" uid="uid://ba8qh1622nuv2" path="res://coin anime.tscn" id="5_2kgsr"]
->>>>>>> 328143e6c903996df118e883fb0507fa7eee624e
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0d3ox"]
 texture = ExtResource("2_lddva")
@@ -1185,11 +1180,3 @@ position = Vector2(-23, 69)
 [node name="Camera2D" type="Camera2D" parent="player"]
 position = Vector2(104, -73)
 zoom = Vector2(1.5, 1.5)
-
-<<<<<<< HEAD
-[node name="Node2D2" parent="." instance=ExtResource("5_32861")]
-position = Vector2(877, 634)
-=======
-[node name="Sprite2D" parent="." instance=ExtResource("5_2kgsr")]
-position = Vector2(286, 592)
->>>>>>> 328143e6c903996df118e883fb0507fa7eee624e
