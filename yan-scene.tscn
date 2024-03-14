@@ -2,10 +2,6 @@
 
 [ext_resource type="Texture2D" uid="uid://dr55mca7joguy" path="res://Gunner_Blue_Run.png" id="1_3rl3y"]
 [ext_resource type="Script" path="res://player.gd" id="1_jx1jg"]
-<<<<<<< HEAD
-=======
-[ext_resource type="PackedScene" path="res://GAME 2d SCENE .tscn" id="3_yh1sa"]
->>>>>>> 06beb12c4225305496908e1a7dcca5e56fd3cbee
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ls0xp"]
 size = Vector2(15.25, 14)
