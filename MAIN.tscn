@@ -27,7 +27,7 @@ texture = ExtResource("1_0mbor")
 position = Vector2(38, -103)
 
 [node name="Yan-scene" parent="." groups=["Player"] instance=ExtResource("4_of4qd")]
-position = Vector2(236, 276)
+position = Vector2(183, 256)
 
 [node name="Node2D" parent="." groups=["Yan-scene"] instance=ExtResource("5_ibbuu")]
 position = Vector2(871, 462)
@@ -36,4 +36,4 @@ position = Vector2(871, 462)
 position = Vector2(1158, 452)
 
 [node name="Node2D3" parent="." instance=ExtResource("5_ibbuu")]
-position = Vector2(1169, 201)
+position = Vector2(1883, 433)

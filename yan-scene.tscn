@@ -77,4 +77,4 @@ sprite_frames = SubResource("SpriteFrames_hg426")
 position = Vector2(65, -11.5)
 
 [node name="Node2D" parent="." instance=ExtResource("3_yh1sa")]
-position = Vector2(288, 409)
+position = Vector2(332, 380)
