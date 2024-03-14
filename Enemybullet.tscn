@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://d7drg3rcdvm7"]
+
+[ext_resource type="Script" path="res://Enemybullet.gd" id="1_a4fhy"]
+[ext_resource type="Texture2D" uid="uid://f6l0hdc1fu8j" path="res://icon.svg" id="2_i1ru1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ouldn"]
+size = Vector2(180.434, 128)
+
+[node name="Enemybullet" type="Area2D"]
+script = ExtResource("1_a4fhy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(38.25, -11)
+rotation = 3.14159
+scale = Vector2(2.857, -4)
+shape = SubResource("RectangleShape2D_ouldn")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(40, -11)
+scale = Vector2(4, 4)
+texture = ExtResource("2_i1ru1")
