@@ -13,6 +13,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3o52m"]
 
 [node name="Node2D" type="Node2D"]
+position = Vector2(-1328, 11)
 
 [node name="Kaitlyn Scene" parent="." instance=ExtResource("2_7x6ma")]
 position = Vector2(-1, -1)
