@@ -28,11 +28,8 @@ func shoot():
 		get_parent().add_child(b)
 		b.global_position = $Marker2D.global_position
 		
-<<<<<<< HEAD
-		
-		
-=======
+
 
 func GetCoin(): 
 	coins += 1 
->>>>>>> 21761dbc772f9cfb00bf6997a81abc1fe684a954
+

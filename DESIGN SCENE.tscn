@@ -1,9 +1,10 @@
-[gd_scene load_steps=30 format=3 uid="uid://pgjppg1gk1wt"]
+[gd_scene load_steps=31 format=3 uid="uid://pgjppg1gk1wt"]
 
 [ext_resource type="PackedScene" uid="uid://bcpfgyh7bywg3" path="res://GAME 2d SCENE .tscn" id="1_pjrph"]
 [ext_resource type="Texture2D" uid="uid://ce0sargd6ac0t" path="res://oak_woods_v1.0/oak_woods_tileset.png" id="2_lddva"]
 [ext_resource type="Script" path="res://player.gd" id="3_vu2cq"]
 [ext_resource type="Texture2D" uid="uid://dr55mca7joguy" path="res://Gunner_Blue_Run.png" id="4_kdf1e"]
+[ext_resource type="PackedScene" uid="uid://btgoa8n260xqp" path="res://Enemy.tscn" id="5_32861"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0d3ox"]
 texture = ExtResource("2_lddva")
@@ -1180,3 +1181,6 @@ position = Vector2(-23, 69)
 [node name="Camera2D" type="Camera2D" parent="player"]
 position = Vector2(104, -73)
 zoom = Vector2(1.5, 1.5)
+
+[node name="Node2D2" parent="." instance=ExtResource("5_32861")]
+position = Vector2(877, 634)
