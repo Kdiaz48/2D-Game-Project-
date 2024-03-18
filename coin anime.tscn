@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://ba8qh1622nuv2"]
+[gd_scene load_steps=6 format=3 uid="uid://ba8qh1622nuv2"]
 
 [ext_resource type="Texture2D" uid="uid://if4f42hnv47m" path="res://coin.png" id="1_n84tp"]
 [ext_resource type="Script" path="res://coin anime.gd" id="2_5kwnm"]
@@ -25,6 +25,9 @@ _data = {
 "coin": SubResource("Animation_vgj5o")
 }
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_pqq1b"]
+radius = 7.07107
+
 [node name="Sprite2D" type="Sprite2D"]
 texture_filter = 1
 position = Vector2(40, 26)
@@ -37,3 +40,8 @@ script = ExtResource("2_5kwnm")
 libraries = {
 "": SubResource("AnimationLibrary_er5yb")
 }
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_pqq1b")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="CollisionShape2D"]

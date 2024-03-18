@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://b051i7m5vnx6h"]
+
+[ext_resource type="Script" path="res://spike.gd" id="1_5ewk1"]
+[ext_resource type="Texture2D" uid="uid://dml70o318f0kw" path="res://Wooden Spikes/4 Conjoined Wooden Spikes.png" id="2_rl08a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u8e4e"]
+size = Vector2(42, 18)
+
+[node name="SPIKE" type="Area2D"]
+script = ExtResource("1_5ewk1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(54, 16)
+texture = ExtResource("2_rl08a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(54, 16)
+shape = SubResource("RectangleShape2D_u8e4e")

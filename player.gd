@@ -27,12 +27,11 @@ func shoot():
 		b = bullet.instantiate()
 		get_parent().add_child(b)
 		b.global_position = $Marker2D.global_position
-<<<<<<< HEAD
-		
-=======
->>>>>>> 328143e6c903996df118e883fb0507fa7eee624e
+
 
 
 func GetCoin(): 
 	coins += 1 
 
+func _on_fallzone_body_entered(body):
+	get_tree().change_scene("res://DESIGN SCENE")
