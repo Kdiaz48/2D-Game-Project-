@@ -4,7 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://ce0sargd6ac0t" path="res://oak_woods_v1.0/oak_woods_tileset.png" id="2_lddva"]
 [ext_resource type="Script" path="res://player.gd" id="3_vu2cq"]
 [ext_resource type="Texture2D" uid="uid://dr55mca7joguy" path="res://Gunner_Blue_Run.png" id="4_kdf1e"]
+<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://b051i7m5vnx6h" path="res://spike.tscn" id="5_eupjt"]
+=======
+>>>>>>> 2e0509b6903650d495bb8acab53f62d69b37b95a
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0d3ox"]
 texture = ExtResource("2_lddva")
@@ -1181,6 +1184,7 @@ position = Vector2(-23, 69)
 [node name="Camera2D" type="Camera2D" parent="player"]
 position = Vector2(104, -73)
 zoom = Vector2(1.5, 1.5)
+<<<<<<< HEAD
 
 [node name="spikes" type="Node2D" parent="."]
 
@@ -1189,3 +1193,5 @@ position = Vector2(460, 646)
 
 [node name="SPIKE" parent="spikes/SPIKE2" instance=ExtResource("5_eupjt")]
 position = Vector2(-76, -2)
+=======
+>>>>>>> 2e0509b6903650d495bb8acab53f62d69b37b95a

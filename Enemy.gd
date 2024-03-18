@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+
 var Bullet = preload("res://Enemybullet.tscn")
 
 var player = null
@@ -9,9 +11,6 @@ var canshoot = true
 
 @onready var spawnpos = $Spawnpos
 
-func _on_Detection_body_entered(body):
-	if body.is_in_group("Yan-scene"):
-		player = body
 		
 func _physics_process(delta):
 	var movement = Vector2(-speed,0)
@@ -19,7 +18,10 @@ func _physics_process(delta):
 	if player:
 		movement = position.direction_to(player.position) * speed
 	movement = move_and_collide(movement)
-
+	
+	if not is_on_floor():
+		velocity.y += gravity * delta
+	
 func _on_Shootspeed_timeout():
 	canshoot = true
 	if player != null:
@@ -33,3 +35,8 @@ func shoot():
 		
 		$Shootspeed.start()
 		canshoot = false
+
+
+func _on_detection_body_entered(body):
+	if body.is_in_group("yan-scene"):
+		player = body # Replace with function body.

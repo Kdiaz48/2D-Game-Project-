@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://11h85dgx52ih" path="res://char_a_p1_0bas_humn_v01.png" id="2_sbre4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4u4ng"]
-size = Vector2(14.9972, 26)
+size = Vector2(7.3757, 14.313)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sqv4h"]
 atlas = ExtResource("2_sbre4")
@@ -81,16 +81,16 @@ script = ExtResource("1_0rjm7")
 [node name="Shootspeed" type="Timer" parent="Enemy"]
 
 [node name="Spawnpos" type="Marker2D" parent="Enemy"]
-position = Vector2(-28, -1)
+position = Vector2(-15, -1)
 scale = Vector2(8, 8)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy"]
-position = Vector2(1.5, -12)
+position = Vector2(1, -6)
 scale = Vector2(4.06741, 4.61118)
 shape = SubResource("RectangleShape2D_4u4ng")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Enemy"]
-scale = Vector2(4, 4)
+scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_j032u")
 
 [node name="Detection" type="Area2D" parent="Enemy"]
@@ -98,3 +98,5 @@ sprite_frames = SubResource("SpriteFrames_j032u")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Enemy/Detection"]
 scale = Vector2(8, 8)
 shape = SubResource("CircleShape2D_mncjo")
+
+[connection signal="body_entered" from="Enemy/Detection" to="Enemy" method="_on_detection_body_entered"]

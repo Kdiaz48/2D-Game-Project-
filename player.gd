@@ -29,6 +29,7 @@ func shoot():
 		b.global_position = $Marker2D.global_position
 
 
+
 func GetCoin(): 
 	coins += 1 
 
