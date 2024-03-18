@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://pgjppg1gk1wt"]
+[gd_scene load_steps=21 format=3 uid="uid://lt3lxgcyewh4"]
 
 [ext_resource type="PackedScene" uid="uid://bcpfgyh7bywg3" path="res://GAME 2d SCENE .tscn" id="1_pjrph"]
 [ext_resource type="Texture2D" uid="uid://ce0sargd6ac0t" path="res://oak_woods_v1.0/oak_woods_tileset.png" id="2_lddva"]

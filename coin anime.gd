@@ -5,9 +5,5 @@ func _on_body_entered(body):
 		body.GetCoin()
 		queue_free()
 	
-
-	
-	
-	func _on_body_entered(body):
 	if body.has_method("GetCoin"):
 		$AnimationPlayer.play("coin")
