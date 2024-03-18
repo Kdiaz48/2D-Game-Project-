@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://cglliy5mmhioh"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.315972
+anchor_top = 0.158951
+anchor_right = 0.715278
+anchor_bottom = 0.691358
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Options 
+
+Gamepad
+Run Right: Right arrow
+Run Left: Left arrow 
+Jump: Up arrow
+
+Dodge humans and make it to the end of the level to win...
+Have FUN!!!
+"
+metadata/_edit_use_anchors_ = true

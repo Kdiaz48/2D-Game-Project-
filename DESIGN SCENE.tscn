@@ -1,7 +1,8 @@
-[gd_scene load_steps=20 format=3 uid="uid://pgjppg1gk1wt"]
+[gd_scene load_steps=21 format=3 uid="uid://pgjppg1gk1wt"]
 
 [ext_resource type="PackedScene" uid="uid://bcpfgyh7bywg3" path="res://GAME 2d SCENE .tscn" id="1_pjrph"]
 [ext_resource type="Texture2D" uid="uid://ce0sargd6ac0t" path="res://oak_woods_v1.0/oak_woods_tileset.png" id="2_lddva"]
+[ext_resource type="PackedScene" uid="uid://b8sqy8kkv6kvo" path="res://CHARACTER1.tscn" id="3_8rmg7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0d3ox"]
 texture = ExtResource("2_lddva")
@@ -1104,3 +1105,6 @@ position = Vector2(174, 43)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D19/StaticBody2D20/StaticBody2D19"]
 position = Vector2(17, 45)
 shape = SubResource("RectangleShape2D_t60rp")
+
+[node name="Node2D2" parent="." instance=ExtResource("3_8rmg7")]
+position = Vector2(176, 633)
