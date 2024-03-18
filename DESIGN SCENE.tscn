@@ -1293,3 +1293,39 @@ position = Vector2(652, 65)
 
 [node name="SPIKE" parent="SPIKE/SPIKE3/SPIKE/SPIKE/SPIKE/SPIKE/SPIKE/SPIKE/SPIKE/SPIKE/SPIKE/SPIKE/SPIKE/SPIKE/SPIKE" instance=ExtResource("5_gvxdn")]
 position = Vector2(528, -1)
+
+[node name="SPIKE2" parent="." instance=ExtResource("5_gvxdn")]
+position = Vector2(891, 701)
+
+[node name="SPIKE" parent="SPIKE2" instance=ExtResource("5_gvxdn")]
+position = Vector2(226, 0)
+
+[node name="SPIKE2" parent="SPIKE2" instance=ExtResource("5_gvxdn")]
+position = Vector2(277, 0)
+
+[node name="SPIKE3" parent="SPIKE2" instance=ExtResource("5_gvxdn")]
+position = Vector2(943, -4)
+
+[node name="SPIKE" parent="SPIKE2/SPIKE3" instance=ExtResource("5_gvxdn")]
+position = Vector2(121, 2)
+
+[node name="SPIKE" parent="SPIKE2/SPIKE3/SPIKE" instance=ExtResource("5_gvxdn")]
+position = Vector2(1126, -47)
+
+[node name="SPIKE" parent="SPIKE2/SPIKE3/SPIKE/SPIKE" instance=ExtResource("5_gvxdn")]
+position = Vector2(-49, 0)
+
+[node name="SPIKE2" parent="SPIKE2/SPIKE3/SPIKE/SPIKE" instance=ExtResource("5_gvxdn")]
+position = Vector2(-100, 0)
+
+[node name="SPIKE3" parent="SPIKE2/SPIKE3/SPIKE/SPIKE" instance=ExtResource("5_gvxdn")]
+position = Vector2(100, 22)
+
+[node name="SPIKE4" parent="SPIKE2/SPIKE3/SPIKE/SPIKE" instance=ExtResource("5_gvxdn")]
+position = Vector2(149, 22)
+
+[node name="SPIKE5" parent="SPIKE2/SPIKE3/SPIKE/SPIKE" instance=ExtResource("5_gvxdn")]
+position = Vector2(332, 25)
+
+[node name="SPIKE6" parent="SPIKE2/SPIKE3/SPIKE/SPIKE" instance=ExtResource("5_gvxdn")]
+position = Vector2(382, 26)
