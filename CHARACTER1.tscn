@@ -155,6 +155,10 @@ animations = [{
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 script = ExtResource("1_1tlsa")
 
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(325, -157)
+zoom = Vector2(1.5, 1.5)
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(-0.875, 7.5)
 scale = Vector2(2, 2)
@@ -163,6 +167,4 @@ shape = SubResource("RectangleShape2D_85mul")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_2n5kw")
-animation = &"RUN"
-
-[node name="Camera2D" type="Camera2D" parent="."]
+animation = &"IDLE"
