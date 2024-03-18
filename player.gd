@@ -32,3 +32,5 @@ func shoot():
 func GetCoin(): 
 	coins += 1 
 
+func _on_fallzone_body_entered(body):
+	get_tree().change_scene("res://DESIGN SCENE")
