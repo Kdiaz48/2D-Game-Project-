@@ -1329,3 +1329,15 @@ position = Vector2(332, 25)
 
 [node name="SPIKE6" parent="SPIKE2/SPIKE3/SPIKE/SPIKE" instance=ExtResource("5_gvxdn")]
 position = Vector2(382, 26)
+
+[node name="SPIKE7" parent="SPIKE2/SPIKE3/SPIKE/SPIKE" instance=ExtResource("5_gvxdn")]
+position = Vector2(1225, 44)
+
+[node name="SPIKE6" parent="SPIKE2/SPIKE3/SPIKE/SPIKE/SPIKE7" instance=ExtResource("5_gvxdn")]
+position = Vector2(54, 0)
+
+[node name="SPIKE7" parent="SPIKE2/SPIKE3/SPIKE/SPIKE/SPIKE7" instance=ExtResource("5_gvxdn")]
+position = Vector2(106, 0)
+
+[node name="SPIKE8" parent="SPIKE2/SPIKE3/SPIKE/SPIKE/SPIKE7" instance=ExtResource("5_gvxdn")]
+position = Vector2(160, 0)
