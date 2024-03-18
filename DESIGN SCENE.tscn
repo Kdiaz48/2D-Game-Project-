@@ -1,8 +1,10 @@
-[gd_scene load_steps=21 format=3 uid="uid://lt3lxgcyewh4"]
+[gd_scene load_steps=23 format=3 uid="uid://lt3lxgcyewh4"]
 
 [ext_resource type="PackedScene" uid="uid://bcpfgyh7bywg3" path="res://GAME 2d SCENE .tscn" id="1_pjrph"]
 [ext_resource type="Texture2D" uid="uid://ce0sargd6ac0t" path="res://oak_woods_v1.0/oak_woods_tileset.png" id="2_lddva"]
 [ext_resource type="PackedScene" uid="uid://b8sqy8kkv6kvo" path="res://CHARACTER1.tscn" id="3_8rmg7"]
+[ext_resource type="PackedScene" uid="uid://bmary6236yq4v" path="res://updated coin .tscn" id="4_qbxix"]
+[ext_resource type="PackedScene" uid="uid://b051i7m5vnx6h" path="res://spike.tscn" id="5_gvxdn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0d3ox"]
 texture = ExtResource("2_lddva")
@@ -1108,3 +1110,9 @@ shape = SubResource("RectangleShape2D_t60rp")
 
 [node name="Player" parent="." instance=ExtResource("3_8rmg7")]
 position = Vector2(176, 633)
+
+[node name="coin" parent="." instance=ExtResource("4_qbxix")]
+position = Vector2(323, 621)
+
+[node name="SPIKE" parent="." instance=ExtResource("5_gvxdn")]
+position = Vector2(354, 645)

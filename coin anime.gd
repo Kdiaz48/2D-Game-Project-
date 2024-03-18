@@ -5,5 +5,11 @@ func _on_body_entered(body):
 		body.GetCoin()
 		queue_free()
 	
+	
+
+func _on_static_body_2d_body_entered(body):
+	
 	if body.has_method("GetCoin"):
-		$AnimationPlayer.play("coin")
+		body.GetCoin()
+		queue_free()
+	
